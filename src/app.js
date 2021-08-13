@@ -6,22 +6,8 @@ import "./style.css";
 const BODY = document.querySelector("body");
 
 //RANDOM VARIABLES LLAMARLAS
-const SUITECONTENT = ["♦", "♥", "♣", "♠"];
-const NUMBERCONTENT = [
-  "A",
-  "2",
-  "3",
-  "4",
-  "5",
-  "6",
-  "7",
-  "8",
-  "9",
-  "10",
-  "J",
-  "Q",
-  "K"
-];
+const SUITECONTENT = ["🌞", "🌸", "🌝", "🍀", "🍄", "🌻", "🌚"];
+const NUMBERCONTENT = ["🦄", "🦎", "🐬", "🐲", "🦩", "🐝", "🐕", "🦘"];
 
 window.onload = function() {
   //RANDOM VARIABLES MAKE THEM WORK
@@ -38,6 +24,7 @@ window.onload = function() {
 
   //SUITE 1 ♥
   let Suite1 = document.createElement("div");
+  Suite1.classList.add("suite-1-class");
   let Suite1Content = document.createTextNode(randomSuiteContent);
   Suite1.appendChild(Suite1Content);
   card.appendChild(Suite1);

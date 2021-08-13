@@ -1,7 +1,7 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
 .background {
-  background-color: lightgray;
+  background-image: linear-gradient(to bottom right, #ffe1e2, #ffd0d2);
   display: flex;
   height: 100vh;
   width: 100vw;
@@ -10,14 +10,14 @@
 }
 
 .poker-card {
-  height: 25rem;
-  width: 18rem;
+  height: 20rem;
+  width: 14rem;
   border-radius: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  margin: 0.5rem;
+  margin-top: 1rem;
 
-  background-color: white;
-  color: red;
+  background-image: linear-gradient(to bottom right, #fff2e2, #ffe3be);
+  box-shadow: 3px 13px 30px 0px #dfb2b4;
   font-size: 3rem;
 
   display: flex;
@@ -25,10 +25,16 @@
   justify-content: space-between;
 }
 
+.suite-1-class {
+  padding-left: 0.7rem;
+}
+
 .suite-2-class {
   align-self: flex-end;
+  padding-right: 0.7rem;
 }
 
 .card-number-class {
   align-self: center;
+  font-size: 5rem;
 }
